@@ -40,7 +40,7 @@ void menucliente(){
 		cout << endl << "                   BANCO                   ";
 		cout << endl << " 1. Insertar Cliente     2. Eliminar cliente         ";
 		cout << endl << " 3. Mostrar clientes     4. Buscar un cliente   ";
-		cout << endl << " 5. Cambiar Clave        6. Salir  ";
+		cout << endl << " 5. Cambiar Clave        9. Salir  ";
 		cout << endl << endl << " Escoja una Opcion: ";
 		cin >> opcion;
 		switch(opcion){
@@ -56,7 +56,7 @@ void menucliente(){
 		        suprimirCola(frente,fin,n);
 			break;
 			case 3:
-				cout << endl << endl << " MOSTAR COLA " << endl << endl;
+				cout << endl << endl << " MOSTRAR COLA " << endl << endl;
 				mostrarClientes(frente);
 			break;	
 			case 4:
@@ -64,11 +64,11 @@ void menucliente(){
 				buscarCliente(frente,fin,c);
 			break;	
 			case 5:
-				cout << endl << endl << " BUSCAR  UN CLIENTE POR SU NOMBRE " << endl << endl;
+				cout << endl << endl << " BUSCAR UN CLIENTE POR SU NOMBRE " << endl << endl;
                 modificarClave(frente,fin,c);
 			break;
 			}
-	} while (opcion != 6);
+	} while (opcion != 9);
 }
 void cargar_cliente(Cliente &c){
 	fflush(stdin);
